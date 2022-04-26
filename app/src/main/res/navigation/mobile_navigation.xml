@@ -22,4 +22,10 @@
             android:name="pl.example.fitapp.ui.notifications.NotificationsFragment"
             android:label="@string/title_notifications"
             tools:layout="@layout/fragment_notifications"/>
+
+    <fragment
+            android:id="@+id/navigation_recipes"
+            android:name="pl.example.fitapp.ui.recipes.RecipesFragment"
+            android:label="@string/title_recipes"
+            tools:layout="@layout/fragment_recipes"/>
 </navigation>
