@@ -1,4 +1,4 @@
-package pl.example.fitapp.ui.notifications;
+package pl.example.fitapp.ui.training;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,24 +10,23 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import pl.example.fitapp.R;
-import pl.example.fitapp.databinding.FragmentNotificationsBinding;
+import pl.example.fitapp.databinding.FragmentTrainingBinding;
 
-public class NotificationsFragment extends Fragment {
+public class TrainingFragment extends Fragment {
 
-    private NotificationsViewModel notificationsViewModel;
-    private FragmentNotificationsBinding binding;
+    private TrainingViewModel trainingViewModel;
+    private FragmentTrainingBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
+        trainingViewModel =
+                new ViewModelProvider(this).get(TrainingViewModel.class);
 
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+        binding = FragmentTrainingBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNotifications;
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textTraining;
+        trainingViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

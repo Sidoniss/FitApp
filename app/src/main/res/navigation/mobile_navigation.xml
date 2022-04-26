@@ -12,16 +12,16 @@
             tools:layout="@layout/fragment_home"/>
 
     <fragment
-            android:id="@+id/navigation_dashboard"
-            android:name="pl.example.fitapp.ui.dashboard.DashboardFragment"
-            android:label="@string/title_dashboard"
-            tools:layout="@layout/fragment_dashboard"/>
+            android:id="@+id/navigation_training"
+            android:name="pl.example.fitapp.ui.training.TrainingFragment"
+            android:label="@string/title_training"
+            tools:layout="@layout/fragment_training"/>
 
     <fragment
-            android:id="@+id/navigation_notifications"
-            android:name="pl.example.fitapp.ui.notifications.NotificationsFragment"
-            android:label="@string/title_notifications"
-            tools:layout="@layout/fragment_notifications"/>
+            android:id="@+id/navigation_settings"
+            android:name="pl.example.fitapp.ui.settings.SettingsFragment"
+            android:label="@string/title_settings"
+            tools:layout="@layout/fragment_settings"/>
 
     <fragment
             android:id="@+id/navigation_recipes"
