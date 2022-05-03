@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="10dp"
+        android:id="@+id/parent"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recipeLayout"
+            android:animateLayoutChanges="true"
+            android:padding="10dp">
+
+        <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/photoOfMeal"
+                android:src="@drawable/ic_launcher_background"/>
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title of recipe"
+                android:textAlignment="center"
+                android:id="@+id/nameOfRecipe"
+                android:layout_toRightOf="@+id/photoOfMeal"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time of cook"
+                android:id="@+id/timeOfCook"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:layout_below="@id/nameOfRecipe"
+                android:layout_toRightOf="@+id/photoOfMeal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:id="@+id/descriptionOfMeal"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:layout_below="@id/timeOfCook"
+                android:layout_toRightOf="@id/photoOfMeal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipe"
+                android:id="@+id/recipeText"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:layout_below="@id/photoOfMeal"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

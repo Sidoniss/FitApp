@@ -15,7 +15,10 @@
             android:id="@+id/navigation_training"
             android:name="pl.example.fitapp.ui.training.TrainingFragment"
             android:label="@string/title_training"
-            tools:layout="@layout/fragment_training"/>
+            tools:layout="@layout/fragment_training">
+        <action android:id="@+id/action_navigation_training_to_trainingTopFragment"
+                app:destination="@id/trainingTopFragment"/>
+    </fragment>
 
     <fragment
             android:id="@+id/navigation_settings"
@@ -28,4 +31,9 @@
             android:name="pl.example.fitapp.ui.recipes.RecipesFragment"
             android:label="@string/title_recipes"
             tools:layout="@layout/fragment_recipes"/>
+    <fragment android:id="@+id/trainingTopFragment" android:name="pl.example.fitapp.ui.training.training_upper_parts.TrainingTopFragment"
+              android:label="fragment_training_top" tools:layout="@layout/fragment_training_top">
+        <action android:id="@+id/action_trainingTopFragment_to_navigation_training"
+                app:destination="@id/navigation_training"/>
+    </fragment>
 </navigation>

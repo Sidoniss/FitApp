@@ -4,4 +4,9 @@
     <string name="title_training">Training</string>
     <string name="title_settings">Settings</string>
     <string name="title_recipes">Recipes</string>
+    <string name="recipe_test">-component\r\n-component\r\n-component\r\n\r\ntexttext text text texttext text
+        texttexttext text texttext texttexttexttext text text texttext text text texttext.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
